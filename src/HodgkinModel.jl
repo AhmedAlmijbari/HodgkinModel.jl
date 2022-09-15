@@ -1,5 +1,8 @@
 module HodgkinModel
 
-# Write your package code here.
+    include("transitionrates.jl") 
+    include("HHDifferentialEq.jl")
+
+    export alpham,betam,alphan,betan,alphah,betah,HHDifferentialEq
 
 end
